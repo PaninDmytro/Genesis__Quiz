@@ -66,7 +66,6 @@
   background: url('../../icons/left__arrow.svg') center no-repeat;
   width: 24px;
   height: 24px;
-  // cursor: pointer;
 }
 
 .back__icon__invisible {
@@ -115,9 +114,6 @@
   width: 335px;
   height: 4px;
   background-color: #E8EAF2;
-
-  /* Fix overflow clipping in Safari */
-  /* https://gist.github.com/domske/b66047671c780a238b51c51ffde8d3a0 */
   transform: translateZ(0);
 }
 

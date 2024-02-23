@@ -2,13 +2,11 @@ import {
   Link, useNavigate, useOutletContext
 } from "react-router-dom";
 import './FirstPage.scss';
-import { useTranslation, Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 
 export const FirstPage = () => {
-  const [language, setLanguage] = useState('');
-  const [percentage, setPercentage,,,] = useOutletContext();
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const navigate = useNavigate();
   const changeLanguage = lng => {
     i18n.changeLanguage(lng);
@@ -18,19 +16,13 @@ export const FirstPage = () => {
 
   const handleChangeLanguage = (language, index) => {
     changeLanguage(languagesOption[index]);
-    setLanguage(language);
     localStorage.setItem('language', language.toString());
     navigate('/2');
   }
 
-  // useEffect(() => {
-  //   setIsProgressOff(false);
-  // },[])
   useEffect(() => {
     localStorage.setItem('pageNumber', '1');
   }, [])
-  // localStorage.setItem('pageNumber', '1');
-  // localStorage.setItem('progressOff', false.toString());
 
   return (
     <main className='main__first container'>

@@ -3,7 +3,7 @@ import {
 } from "react-router-dom";
 import './Email.scss';
 import { useTranslation, Trans } from "react-i18next";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import cn from 'classnames';
 
 export const Email = () => {
@@ -14,7 +14,7 @@ export const Email = () => {
 
   const handleChange = (event) => {
     setError('');
-  
+
     const { value } = event.target;
     setEmail(value);
 
@@ -23,7 +23,7 @@ export const Email = () => {
   }
 
   const handleError = () => {
-  const invalid = !valid || !email;
+    const invalid = !valid || !email;
 
     if (invalid) {
       setError('Invalid email')
@@ -52,12 +52,10 @@ export const Email = () => {
           placeholder={t('Your email')}
           onChange={handleChange}
         ></input>
-  
-        {/* {error && ( */}
-          <p className={cn("error", {
-            'visible__error': error,
-          })}>{error}</p>
-        {/* )} */}
+
+        <p className={cn("error", {
+          'visible__error': error,
+        })}>{error}</p>
       </form>
 
       <p className="policy">

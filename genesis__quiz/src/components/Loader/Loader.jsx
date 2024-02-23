@@ -8,7 +8,7 @@ import { useTranslation, Trans } from "react-i18next";
 export const Loader = () => {
   const [percentage, setPercentage,,,] = useOutletContext();
   const navigate = useNavigate();
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   useEffect(() => {
     const total = 5000;
@@ -31,12 +31,6 @@ export const Loader = () => {
 
     return () => clearInterval(interval);
   }, []);
-
-  useEffect(() => {
-    // setIsProgressOff(true);
-
-    // return setIsProgressOff(false);
-  }, [])
 
   return (
     <main className='main__loader container'>

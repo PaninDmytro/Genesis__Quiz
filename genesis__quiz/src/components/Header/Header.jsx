@@ -9,7 +9,6 @@ import { GetParams } from '../../utils/getParams';
 export const Header = ({
   progress,
   setProgress,
-  // isLoad,
 }) => {
   const [time, setTime] = useState(new Date());
   const realTime = time.toLocaleTimeString().slice(0, 5)

@@ -6,7 +6,6 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    // we init with resources
     resources: {
       en: {
         translations: {
@@ -161,17 +160,13 @@ i18n
     fallbackLng: "en",
     debug: true,
 
-    // have a common namespace used around the full app
     ns: ["translations"],
     defaultNS: "translations",
 
-    keySeparator: false, // we use content as keys
+    keySeparator: false,
 
-    // interpolation: {
-    //   escapeValue: false
-    // }
     interpolation: {
-      escapeValue: false, // react already safes from xss
+      escapeValue: false,
       format: (value, format, lng) => {
         if (format === 'link' || format === 'span') {
           return value;

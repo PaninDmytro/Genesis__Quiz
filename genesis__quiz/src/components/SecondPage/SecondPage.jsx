@@ -16,15 +16,9 @@ export const SecondPage = () => {
   const [gender, setGender] = useState('');
   const gendersArray = ['Female', 'Male', 'Other'];
 
-  // useEffect(() => {
-  //   setProgress(progress => progress + 20);
-  // }, []);
-
   useEffect(() => {
     localStorage.setItem('pageNumber', '2');
   }, [])
-
-  // localStorage.setItem('pageNumber', '2');
 
   const handleChooseAge = (gender) => {
     setGender(gender);

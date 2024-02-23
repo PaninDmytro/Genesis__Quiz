@@ -1,6 +1,3 @@
-import {
-  Link
-} from "react-router-dom";
 import './FifthPage.scss';
 import wolf from '../../pictures/wolf.png';
 import lovely from '../../pictures/lovely.png';

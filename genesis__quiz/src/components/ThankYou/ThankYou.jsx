@@ -3,23 +3,18 @@ import {
 } from "react-router-dom";
 import './ThankYou.scss';
 import checkmark from '../../pictures/checkmark.png';
-import { useTranslation, Trans } from "react-i18next";
-// import { createCSVRow } from "../../utils/dataForScv";
-import { CSVLink, CSVDownload } from "react-csv";
-// import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import { CSVLink } from "react-csv";
 import { data, getCsvData } from "../../utils/dataForFile";
 import { useState } from "react";
-// import Papa from "papaparse";
 
 export const ThankYou = () => {
   const { t } = useTranslation();
   const [data, setData] = useState([]);
-  // const [percentage, setPercentage, , , setIsProgressOff] = useOutletContext();
   const [percentage, setPercentage, progress, setProgress, isLoad, setIsLoad] = useOutletContext();
 
   const handleRetake = () => {
     setIsLoad(false);
-    // setIsProgressOff(false);
     localStorage.clear();
   }
 

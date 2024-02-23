@@ -1,15 +1,14 @@
 import {
-  Link, useNavigate
+ useNavigate
 } from "react-router-dom";
 import './FourthPage.scss';
 import { useTranslation, Trans } from "react-i18next";
-import { useOutletContext } from "react-router-dom";
 import { useEffect, useState } from "react";
 import cn from 'classnames';
 
 export const FourthPage = () => {
   const { t } = useTranslation();
-  const [, , progress, setProgress] = useOutletContext();
+  const navigate = useNavigate();
   const [clickedItems, setClickedItems] = useState([]);
   const hatesArray = ['Lack of logic', 'A slow speed', 'Lack of humor', 'Way too generic ending'];
   const hatesMapping = {
@@ -25,15 +24,21 @@ export const FourthPage = () => {
     } else {
       setClickedItems(items => items.filter(item => item !== hate));
     }
-  
+  }
+
+  const handleNext = () => {
     localStorage.setItem('hate', JSON.stringify(clickedItems));
+
+    if (clickedItems.length > 0) {
+      navigate('/5');
+    }
+
+    return;
   }
 
   useEffect(() => {
     localStorage.setItem('pageNumber', '4');
   }, [])
-
-  // localStorage.setItem('pageNumber', '4');
 
   return (
     <main className='main__fourth container'>
@@ -72,13 +77,14 @@ export const FourthPage = () => {
         ))}
       </ul>
 
-      <Link
-        to={clickedItems.length === 0 ? null : '/5'}
+      <button
         className={cn('next-4', {
           able: clickedItems.length > 0,
-        })}>
+        })}
+        onClick={handleNext}
+      >
         {t('Next')}
-      </Link>
+      </button>
     </main >
   )
 }
