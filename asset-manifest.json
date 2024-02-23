@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Genesis__Quiz/static/css/main.fbe6900e.css",
+    "main.js": "/Genesis__Quiz/static/js/main.5e4ac731.js",
+    "static/media/female.png": "/Genesis__Quiz/static/media/female.97fb4cb8c81a030d2857.png",
+    "static/media/other.png": "/Genesis__Quiz/static/media/other.f4929eb4ec1399acb208.png",
+    "static/media/male.png": "/Genesis__Quiz/static/media/male.46ae4ccca3b47c76afdc.png",
+    "static/media/download.svg": "/Genesis__Quiz/static/media/download.0ab52a28ea9c0b115cee.svg",
+    "static/media/wifi.svg": "/Genesis__Quiz/static/media/wifi.977f0f41699007d76156.svg",
+    "index.html": "/Genesis__Quiz/index.html",
+    "static/media/Share.svg": "/Genesis__Quiz/static/media/Share.1f5a30df0f9725eb5ef8.svg",
+    "static/media/Bookmarks.svg": "/Genesis__Quiz/static/media/Bookmarks.d3d9febd6ca56fa70eda.svg",
+    "static/media/AA.svg": "/Genesis__Quiz/static/media/AA.cdf8fa0a49c59a84a695.svg",
+    "static/media/signal.svg": "/Genesis__Quiz/static/media/signal.d894f4e8a92e6fe34387.svg",
+    "static/media/refresh-btn.svg": "/Genesis__Quiz/static/media/refresh-btn.64b21295db574659e92c.svg",
+    "static/media/copie.svg": "/Genesis__Quiz/static/media/copie.a638b71a0864bc5332a7.svg",
+    "static/media/battery.svg": "/Genesis__Quiz/static/media/battery.b328a970af06f0750640.svg",
+    "static/media/checked.svg": "/Genesis__Quiz/static/media/checked.73d17cd581e4e357d2d7.svg",
+    "static/media/Lock.svg": "/Genesis__Quiz/static/media/Lock.d05cad7e6970ca5b7c2d.svg",
+    "static/media/Forward.svg": "/Genesis__Quiz/static/media/Forward.3d42e051ddd6e1940973.svg",
+    "static/media/Back.svg": "/Genesis__Quiz/static/media/Back.215ac5d66cef885ada64.svg",
+    "static/media/left__arrow.svg": "/Genesis__Quiz/static/media/left__arrow.c860192f5bc62c119dee.svg",
+    "main.fbe6900e.css.map": "/Genesis__Quiz/static/css/main.fbe6900e.css.map",
+    "main.5e4ac731.js.map": "/Genesis__Quiz/static/js/main.5e4ac731.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fbe6900e.css",
+    "static/js/main.5e4ac731.js"
+  ]
+}
