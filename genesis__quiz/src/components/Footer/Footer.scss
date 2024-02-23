@@ -1,0 +1,94 @@
+@import '../../utils/reset.scss';
+
+.footer {
+  padding: 8px 18px;
+}
+
+.adress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 12px 9px;
+  width: 321px;
+  height: 42px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 12px 0px #00000021;
+  margin: auto;
+  margin-bottom: 12px;
+}
+
+.adress__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.domain {
+  display: flex;
+  align-items: center;
+}
+
+.register {
+  background: url('../../icons/AA.svg') center no-repeat;
+}
+
+.lock__icon {
+  background: url('../../icons/Lock.svg') center no-repeat;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.domain__com {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
+  text-align: center;
+}
+
+.refresh {
+  background: url('../../icons/refresh-btn.svg') center no-repeat;
+}
+
+.nav {
+  margin-bottom: 29px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+.arrow__left {
+  background: url('../../icons/Back.svg') center no-repeat;
+}
+
+.arrow__right {
+  background: url('../../icons/Forward.svg') center no-repeat;
+}
+
+.share {
+  background: url('../../icons/Share.svg') center no-repeat;
+}
+
+.book {
+  background: url('../../icons/Bookmarks.svg') center no-repeat;
+}
+
+.copie {
+  background: url('../../icons/copie.svg') center no-repeat;
+}
+
+.underline {
+  width: 134px;
+  height: 5px;
+  background-color: #000;
+  border-radius: 100px;
+  margin: auto;
+}

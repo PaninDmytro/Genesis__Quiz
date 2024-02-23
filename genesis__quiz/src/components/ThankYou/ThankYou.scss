@@ -1,0 +1,78 @@
+@import '../../utils/reset.scss';
+@import '../../styles/mixin.scss';
+
+.main__thank {
+  background-color: #1F002B;
+  padding-bottom: 20px;
+}
+
+.preferences__thank {
+  margin-bottom: 62px;
+}
+
+.thank__you {
+  font-family: "Niconne", cursive;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43.65px;
+  text-align: center;
+  color: #ECECFB;
+}
+
+.choose__thank {
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 25px;
+  text-align: center;
+  color: #ECECFB;
+}
+
+.checkmark {
+  display: flex;
+  margin: auto;
+  width: 118px;
+  height: 118px;
+  margin-bottom: 142px;
+}
+
+.download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 29px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.download__icon {
+  background: url('../../icons/download.svg') center no-repeat;
+  width: 42px;
+  height: 42px;
+  margin-right: 7px;
+}
+
+.donload__text {
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 25px;
+  color: #ECECFB;
+}
+
+.retake {
+  font-family: "Albert Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 335px;
+  height: 56px;
+  border-radius: 1000px;
+  background-color: #E4229C;
+  color: #fff;
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 24px;
+  margin: auto;
+  text-decoration: none;
+}

@@ -1,0 +1,65 @@
+@import '../../utils/reset.scss';
+
+.main__second {
+  background-color: #1F002B;
+  padding-bottom: 246px;
+}
+
+// .container {
+// }
+
+.preferences__second {
+  margin: auto;
+  margin-bottom: 44px;
+  max-width: 323px;
+}
+
+.question__second {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -1%;
+  text-align: center;
+  color: #F2F3F5;
+  margin-bottom: 16px;
+}
+
+.choose__second {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  color: #C4C8CC;
+}
+
+.genders {
+  display: flex;
+  justify-content: center;
+  column-gap: 12px;
+}
+
+.gender__option__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 144px;
+  border-radius: 12px;
+  background-color: #36173D;
+  text-decoration: none;
+}
+
+.gender__image {
+  width: 52px;
+  height: 52px;
+  margin-bottom: 10px;
+}
+
+.gender__option {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.2%;
+  color: #fff;
+}

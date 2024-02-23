@@ -1,0 +1,57 @@
+@import '../../utils/reset.scss';
+
+.main__first {
+  background-color: #1F002B;
+  padding-bottom: 134px;
+}
+
+.preferences__first {
+  margin: auto;
+  margin-bottom: 24px;
+  max-width: 323px;
+}
+
+.question__first {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -1%;
+  text-align: center;
+  color: #F2F3F5;
+  margin-bottom: 16px;
+}
+
+.choose__first {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  color: #C4C8CC;
+}
+
+.options__first {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.option__block__first {
+  display: flex;
+  align-items: center;
+  background-color: #36173D;
+  width: 327px;
+  height: 60px;
+  border-radius: 16px;
+  padding: 12px 20px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.option__first {
+  font-weight: 600px;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+}

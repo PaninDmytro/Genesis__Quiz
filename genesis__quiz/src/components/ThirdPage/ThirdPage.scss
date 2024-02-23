@@ -1,0 +1,44 @@
+@import '../../utils/reset.scss';
+
+.main__third {
+  background-color: #1F002B;
+  padding-bottom: 140px;
+}
+
+.question__third {
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  color: #F2F3F5;
+  margin-bottom: 24px;
+}
+
+.options__third {
+  font-family: "Albert Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.option__block__third {
+  display: flex;
+  align-items: center;
+  background-color: #36173D;
+  width: 327px;
+  height: 60px;
+  border-radius: 16px;
+  padding: 12px 20px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.option__third {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+}
