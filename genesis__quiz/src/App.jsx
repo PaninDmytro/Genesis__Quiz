@@ -10,17 +10,27 @@ export const App = () => {
   const [percentage, setPercentage] = useState(0);
   const [progress, setProgress] = useState(0);
   const [isLoad, setIsLoad] = useState(false);
-  localStorage.setItem('isLoad', isLoad.toString());
+  const [isProgressVisible, setIsProgressVisible] = useState(false);
 
   return (
     <div className="app">
-      <Header 
+      <Header
         progress={progress}
         setProgress={setProgress}
+        isProgressVisible={isProgressVisible}
       />
 
       <Outlet
-        context={[percentage, setPercentage, progress, setProgress, isLoad, setIsLoad]}
+        context={[
+          percentage,
+          setPercentage,
+          progress,
+          setProgress,
+          isLoad,
+          setIsLoad,
+          setIsProgressVisible,
+          isProgressVisible,
+        ]}
       />
 
       <Footer />

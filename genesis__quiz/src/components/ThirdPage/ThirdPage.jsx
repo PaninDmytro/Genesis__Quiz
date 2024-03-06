@@ -1,11 +1,12 @@
 import {
-  useNavigate
+  useNavigate, useOutletContext
 } from "react-router-dom";
 import './ThirdPage.scss';
 import { useTranslation, Trans } from "react-i18next";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 export const ThirdPage = () => {
+  const [percentage, setPercentage, progress, setProgress, isLoad, setIsLoad, setIsProgressVisible] = useOutletContext();
   const { t } = useTranslation();
   const navigate = useNavigate();
   const agesArray = ['18-29 years', '30-39 years', '40-49 years', '50+'];
@@ -23,6 +24,7 @@ export const ThirdPage = () => {
 
   useEffect(() => {
     localStorage.setItem('pageNumber', '3');
+    setIsProgressVisible(true);
   }, [])
 
 

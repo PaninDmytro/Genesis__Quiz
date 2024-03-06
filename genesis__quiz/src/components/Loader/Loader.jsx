@@ -6,7 +6,7 @@ import { useOutletContext, useNavigate } from "react-router-dom";
 import { useTranslation, Trans } from "react-i18next";
 
 export const Loader = () => {
-  const [percentage, setPercentage,,,] = useOutletContext();
+  const [percentage, setPercentage, progress, setProgress, isLoad, setIsLoad] = useOutletContext();
   const navigate = useNavigate();
   const { t } = useTranslation();
 
@@ -29,7 +29,11 @@ export const Loader = () => {
       })
     }, intervalTime)
 
-    return () => clearInterval(interval);
+    return () => {
+      clearInterval(interval);
+      setIsLoad(false);
+      setPercentage(0);
+    };
   }, []);
 
   return (

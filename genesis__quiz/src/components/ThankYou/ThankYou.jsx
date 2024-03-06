@@ -5,7 +5,7 @@ import './ThankYou.scss';
 import checkmark from '../../pictures/checkmark.png';
 import { useTranslation } from "react-i18next";
 import { CSVLink } from "react-csv";
-import { data, getCsvData } from "../../utils/dataForFile";
+import { getCsvData } from "../../utils/dataForFile";
 import { useState } from "react";
 
 export const ThankYou = () => {
@@ -22,8 +22,6 @@ export const ThankYou = () => {
     setData(getCsvData());
     done();
   }
-
-  console.log(data);
 
   return (
     <main className='main__thank container'>

@@ -1,5 +1,5 @@
 import {
- useNavigate
+  useNavigate, useOutletContext
 } from "react-router-dom";
 import './FourthPage.scss';
 import { useTranslation, Trans } from "react-i18next";
@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import cn from 'classnames';
 
 export const FourthPage = () => {
+  const [percentage, setPercentage, progress, setProgress, isLoad, setIsLoad, setIsProgressVisible] = useOutletContext();
   const { t } = useTranslation();
   const navigate = useNavigate();
   const [clickedItems, setClickedItems] = useState([]);
@@ -38,17 +39,13 @@ export const FourthPage = () => {
 
   useEffect(() => {
     localStorage.setItem('pageNumber', '4');
+    setIsProgressVisible(true);
   }, [])
 
   return (
     <main className='main__fourth container'>
       <h1 className='question__fourth'>
-        <Trans
-          i18nKey='What do you hate'
-          components={{ hate: <span className="hate"></span> }}
-        >
-          What do you <span className="hate">{t('hate')}</span> the most in a book?
-        </Trans>
+        {t('What do you')} <span className="hate">{t('hate')}</span> {t('in a book?')}
       </h1>
 
       <ul className="options__fourth">

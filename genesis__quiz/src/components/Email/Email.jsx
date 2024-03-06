@@ -59,16 +59,14 @@ export const Email = () => {
       </form>
 
       <p className="policy">
-        <Trans i18nKey='I agree'>
-          By continuing I agree with{' '}
-          <Link to='#' className='policy__link' format="link">
-            Privacy policy
-          </Link>{' '}
-          and{' '}
-          <Link to='#' className='policy__link' format="link">
-            Terms of use.
-          </Link>
-        </Trans>
+        {t('I agree')}{' '}
+        <Link to='#' className='policy__link' format="link">
+          {t('Privacy')}
+        </Link>{' '}
+        {t('and')}{' '}
+        <Link to='#' className='policy__link' format="link">
+          {t('Terms')}
+        </Link>
       </p>
 
       <Link

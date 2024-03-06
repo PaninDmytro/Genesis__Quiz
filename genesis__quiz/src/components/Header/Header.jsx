@@ -3,24 +3,15 @@ import './Header.scss';
 import * as Progress from '@radix-ui/react-progress';
 import { Link } from 'react-router-dom';
 import cn from 'classnames';
-import { GetParams } from '../../utils/getParams';
-
 
 export const Header = ({
   progress,
   setProgress,
+  isProgressVisible,
 }) => {
   const [time, setTime] = useState(new Date());
   const realTime = time.toLocaleTimeString().slice(0, 5)
   const pageNumber = localStorage.getItem('pageNumber');
-  const isLoad = localStorage.getItem('isLoad');
-  const arrayOfPageNumber = [0, 1, 2, 3, 4, 5];
-  const page = +(GetParams());
-  const isProgressShov = arrayOfPageNumber.includes(page);
-
-  console.log('isLoad', isLoad);
-  console.log('page', page);
-  console.log(arrayOfPageNumber.includes(+page));
 
   useEffect(() => {
     setProgress(pageNumber * 20);
@@ -56,10 +47,10 @@ export const Header = ({
       <div className="progress__bar">
 
         <Link to={pageNumber > 1 && `/${pageNumber - 1}`} className={cn('back__icon', {
-          'back__icon__invisible': pageNumber === '1' || pageNumber === '' || !isProgressShov,
+          'back__icon__invisible': pageNumber === '1' || pageNumber === '' || !isProgressVisible,
         })}></Link>
 
-        {isProgressShov && (
+        {isProgressVisible && (
           <p className='page__number'><span className='number'>{pageNumber}</span>/5</p>
         )}
 
@@ -70,7 +61,7 @@ export const Header = ({
         </ul>
       </div>
 
-      {isProgressShov && (
+      {isProgressVisible && (
         <Progress.Root className="ProgressRoot" value={progress}>
           <Progress.Indicator
             className="ProgressIndicator"

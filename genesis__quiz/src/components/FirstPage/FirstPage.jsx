@@ -3,9 +3,10 @@ import {
 } from "react-router-dom";
 import './FirstPage.scss';
 import { useTranslation } from "react-i18next";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 export const FirstPage = () => {
+  const [percentage, setPercentage, progress, setProgress, isLoad, setIsLoad, setIsProgressVisible] = useOutletContext();
   const { i18n } = useTranslation();
   const navigate = useNavigate();
   const changeLanguage = lng => {
@@ -22,6 +23,7 @@ export const FirstPage = () => {
 
   useEffect(() => {
     localStorage.setItem('pageNumber', '1');
+    setIsProgressVisible(true);
   }, [])
 
   return (

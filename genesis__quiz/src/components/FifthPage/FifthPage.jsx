@@ -15,7 +15,7 @@ import cn from 'classnames';
 
 export const FifthPage = () => {
   const [clickedItems, setClickedItems] = useState([]);
-  const [percentage, setPercentage, progress, setProgress, isLoad, setIsLoad] = useOutletContext();
+  const [percentage, setPercentage, progress, setProgress, isLoad, setIsLoad, setIsProgressVisible] = useOutletContext();
   const { t } = useTranslation();
   const emojisArray = ['Werewolf', 'Romance', 'Action', 'Young Adult', 'Royal Obsession', 'Bad Boy', 'Billionaire'];
   const emojisObject = {
@@ -46,21 +46,21 @@ export const FifthPage = () => {
     if (clickedItems.length === 0) {
       return;
     } else {
+      setIsProgressVisible(false);
       setIsLoad(true);
       setProgress(progress => progress + 1);
     }
-
-    console.log('isLoad', isLoad);
   }
 
   useEffect(() => {
+    setIsProgressVisible(true);
     localStorage.setItem('pageNumber', '5');
   }, [])
 
   return (
     <>
       {
-        (isLoad && percentage !== 100) ? (
+        (isLoad) ? (
           <Loader />
         ) : (
           <main className='main__fifth container'>

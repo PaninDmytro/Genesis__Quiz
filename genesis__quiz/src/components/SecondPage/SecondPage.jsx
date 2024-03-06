@@ -11,13 +11,14 @@ import { useEffect, useState } from "react";
 
 export const SecondPage = () => {
   const { t, i18n } = useTranslation();
-  const [, , progress, setProgress] = useOutletContext();
+  const [percentage, setPercentage, progress, setProgress, isLoad, setIsLoad, setIsProgressVisible] = useOutletContext();
   const navigate = useNavigate();
   const [gender, setGender] = useState('');
   const gendersArray = ['Female', 'Male', 'Other'];
 
   useEffect(() => {
     localStorage.setItem('pageNumber', '2');
+    setIsProgressVisible(true);
   }, [])
 
   const handleChooseAge = (gender) => {
