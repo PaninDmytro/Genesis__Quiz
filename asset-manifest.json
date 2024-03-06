@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Genesis__Quiz/static/css/main.eccb9076.css",
-    "main.js": "/Genesis__Quiz/static/js/main.5e4ac731.js",
+    "main.css": "/Genesis__Quiz/static/css/main.fb3e3efb.css",
+    "main.js": "/Genesis__Quiz/static/js/main.ea3e79f1.js",
     "static/media/female.png": "/Genesis__Quiz/static/media/female.97fb4cb8c81a030d2857.png",
     "static/media/other.png": "/Genesis__Quiz/static/media/other.f4929eb4ec1399acb208.png",
     "static/media/male.png": "/Genesis__Quiz/static/media/male.46ae4ccca3b47c76afdc.png",
@@ -20,11 +20,11 @@
     "static/media/Forward.svg": "/Genesis__Quiz/static/media/Forward.3d42e051ddd6e1940973.svg",
     "static/media/Back.svg": "/Genesis__Quiz/static/media/Back.215ac5d66cef885ada64.svg",
     "static/media/left__arrow.svg": "/Genesis__Quiz/static/media/left__arrow.c860192f5bc62c119dee.svg",
-    "main.eccb9076.css.map": "/Genesis__Quiz/static/css/main.eccb9076.css.map",
-    "main.5e4ac731.js.map": "/Genesis__Quiz/static/js/main.5e4ac731.js.map"
+    "main.fb3e3efb.css.map": "/Genesis__Quiz/static/css/main.fb3e3efb.css.map",
+    "main.ea3e79f1.js.map": "/Genesis__Quiz/static/js/main.ea3e79f1.js.map"
   },
   "entrypoints": [
-    "static/css/main.eccb9076.css",
-    "static/js/main.5e4ac731.js"
+    "static/css/main.fb3e3efb.css",
+    "static/js/main.ea3e79f1.js"
   ]
 }
